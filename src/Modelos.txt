@@ -1,0 +1,58 @@
+#Inicializamos modelos
+rfr=RFR()
+etr=ETR()
+gbr=GBR()
+xgbr=XGBR()
+ctr=CTR()
+dtr=DTR()
+lgbmr=LGBMR()
+xgbrf = XGBRF()
+linreg = LinReg()
+knr = KNR()
+logreg = LogReg()
+xgbc = XGBClassifier()
+rfc = RandomForestClassifier()
+cbc = CatBoostClassifier()
+bc = BaggingClassifier()
+
+#Entrenamientos
+rfr.fit(X_train, y_train)
+etr.fit(X_train, y_train)
+gbr.fit(X_train, y_train)
+xgbr.fit(X_train, y_train)
+ctr.fit(X_train, y_train, verbose=0)
+dtr.fit(X_train, y_train)
+lgbmr.fit(X_train, y_train)
+xgbrf.fit(X_train, y_train)
+linreg.fit(X_train, y_train)
+knr.fit(X_train, y_train)
+logreg.fit(X_train, y_train)
+xgbc.fit(X_train, y_train, verbose=0)
+rfc.fit(X_train, y_train)
+cbc.fit(X_train, y_train, verbose=0)
+bc.fit(X_train, y_train)
+
+#Predicciones
+y_pred_rfr = rfr.predict(X_test)
+y_pred_etr = etr.predict(X_test)
+y_pred_gbr = gbr.predict(X_test)
+y_pred_xgbr = xgbr.predict(X_test)
+y_pred_ctr = ctr.predict(X_test)
+y_pred_dtr = dtr.predict(X_test)
+y_pred_lgbmr = lgbmr.predict(X_test)
+y_pred_xgbrf = xgbrf.predict(X_test)
+y_pred_linreg = linreg.predict(X_test)
+y_pred_knr = knr.predict(X_test)
+y_pred_logreg = logreg.predict(X_test)
+y_pred_xgbc = xgbc.predict(X_test)
+y_pred_rfc = rfc.predict(X_test)
+y_pred_cbc = cbc.predict(X_test)
+y_pred_bc = bc.predict(X_test)
+
+#Calculo de error
+print(mse(y_test, y_pred_rfr, squared=False), mse(y_test, y_pred_etr, squared=False), mse(y_test, y_pred_gbr, squared=False), 
+mse(y_test, y_pred_xgbr, squared=False), mse(y_test, y_pred_ctr, squared=False), mse(y_test, y_pred_dtr, squared=False),
+mse(y_test, y_pred_lgbmr, squared=False), mse(y_test, y_pred_xgbrf, squared=False), mse(y_test, y_pred_linreg, squared=False),
+mse(y_test, y_pred_knr, squared=False), mse(y_test, y_pred_logreg, squared=False))
+print(mse(y_test, y_pred_xgbc, squared=False), mse(y_test, y_pred_rfc, squared=False), mse(y_test, y_pred_cbc, squared=False),
+     mse(y_test, y_pred_bc, squared=False))

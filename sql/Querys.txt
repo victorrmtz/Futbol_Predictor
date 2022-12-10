@@ -1,0 +1,14 @@
+-- Cuantas veces a ganado, empatado, o perdido el Mallorca en la Primera mitad
+
+select HomeTeam, Count(HTR), HTR
+from matches
+where HomeTeam = 'Mallorca' and Date > '2020/09/13'
+group by HTR
+
+-- Selecciona el nombre del estadio del Cadiz refiriendose a la tabla Teams
+
+select t.team, stadium
+from teams as t
+left join stadiums as s
+on id_stadium = s.id
+where t.team = 'Cadiz'

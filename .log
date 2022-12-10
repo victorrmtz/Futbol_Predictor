@@ -1,0 +1,42 @@
+2022-12-02 13:11:03,764 [10472] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2022-12-02 13:11:03,764 [10472] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2022-12-02 13:11:03,765 [10472] INFO     root:247: [JupyterRequire] Initializing comms.
+2022-12-02 13:11:03,766 [10472] DEBUG    root:195: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2022-12-02 13:11:03,767 [10472] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2022-12-02 13:11:03,767 [10472] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2022-12-02 13:11:04,567 [10472] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2022-12-02 13:11:04,571 [10472] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2022-12-02 13:11:04,571 [10472] INFO     root:247: [JupyterRequire] Initializing comms.
+2022-12-02 13:11:04,572 [10472] DEBUG    root:195: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2022-12-02 13:11:04,573 [10472] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2022-12-02 13:11:04,573 [10472] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2022-12-02 13:14:17,655 [10472] INFO     numexpr.utils:159: [JupyterRequire] NumExpr defaulting to 8 threads.
+2022-12-02 13:16:33,483 [10472] WARNING  root:144: [JupyterRequire] 
+  [33m[1mWarning:[0m to view this Streamlit app on a browser, run it with the following
+  command:
+
+    streamlit run C:\IronHack\anaconda3\lib\site-packages\ipykernel_launcher.py [ARGUMENTS]
+2022-12-02 14:42:20,675 [10472] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2022-12-02 14:42:20,675 [10472] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2022-12-02 14:42:20,675 [10472] INFO     root:247: [JupyterRequire] Initializing comms.
+2022-12-02 14:42:20,677 [10472] DEBUG    root:195: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2022-12-02 14:42:20,678 [10472] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2022-12-02 14:42:20,678 [10472] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2022-12-06 10:18:15,512 [11596] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2022-12-06 10:18:15,512 [11596] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2022-12-06 10:18:15,513 [11596] INFO     root:247: [JupyterRequire] Initializing comms.
+2022-12-06 10:18:15,514 [11596] DEBUG    root:195: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2022-12-06 10:18:15,515 [11596] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2022-12-06 10:18:15,515 [11596] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2022-12-06 10:18:16,302 [11596] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2022-12-06 10:18:16,302 [11596] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2022-12-06 10:18:16,302 [11596] INFO     root:247: [JupyterRequire] Initializing comms.
+2022-12-06 10:18:16,303 [11596] DEBUG    root:195: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2022-12-06 10:18:16,304 [11596] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2022-12-06 10:18:16,304 [11596] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2022-12-06 10:40:17,927 [24784] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2022-12-06 10:40:17,927 [24784] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2022-12-06 10:40:17,927 [24784] INFO     root:247: [JupyterRequire] Initializing comms.
+2022-12-06 10:40:17,929 [24784] DEBUG    root:195: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2022-12-06 10:40:17,929 [24784] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2022-12-06 10:40:17,930 [24784] DEBUG    root:97: [JupyterRequire] Registering comm targets.
