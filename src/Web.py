@@ -159,9 +159,17 @@ else:
     col1, col2 = st.columns([1, 2])
 
     with col2:
-        pitch = mls.Pitch(pitch_color='grass', line_color='white', stripe=True, pitch_length=105, pitch_width=68)
-        fig, ax = pitch.draw(figsize=(16, 8))
-        plt.show()
+        pitch = mls.Pitch(pitch_color='grass', line_color='white', stripe=True, pitch_length=6, pitch_width=3)
+        fig, ax = pitch.draw(figsize=(14, 7))
+        if 'MF' in p_str['Pos'].iloc[0]:
+            sc1 = pitch.scatter(60, 40, ax=ax, c='#117800', s=3500, zorder=10)
+        if 'DF' in p_str['Pos'].iloc[0]:
+            sc1 = pitch.scatter(90, 40, ax=ax, c='#FF6800', s=3500, zorder=10)
+        if 'FW' in p_str['Pos'].iloc[0]:
+            sc1 = pitch.scatter(30, 40, ax=ax, c='#0049FF', s=3500, zorder=10)
+        if 'GK' in p_str['Pos'].iloc[0]:
+            sc1 = pitch.scatter(115, 40, ax=ax, c='#FF0000', s=3500, zorder=10)
+        st.pyplot(fig, facecolor='#0E1117', edgecolor='#0E1117')
 
 match = pd.read_csv('../final_match.csv')
 stadium = pd.read_csv('../data_limpio/stadiums_l.csv')
