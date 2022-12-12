@@ -21,7 +21,7 @@ githublink = '[GitHub Repo](https://github.com/victorrmtz/Futbol_Predictor)'
 
 players = pd.read_csv('../../data_limpio/players_l.csv')
 
-st.title('Fútbol Predictor')
+st.title('Estadísticas de Jugadores')
 
 records = players.filter(['Id','Player']).sort_values(by='Id').to_dict('records')
 
