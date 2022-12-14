@@ -23,16 +23,21 @@ with st.sidebar:
     githublink = '[GitHub Repo](https://github.com/victorrmtz/Futbol_Predictor)'
 
     st.image(
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/1384px-LaLiga.svg.png",
+        "https://4.bp.blogspot.com/-1LVHjepJLjk/WfVdYb2cZYI/AAAAAAAAAD8/YZSEZaYRhlUdS4gPbu5eUgypSFjwRcGnwCLcBGAs/s1600/la-liga.gif",
         use_column_width=True)
-
-    st.sidebar.header('Stats Competiciones:')
 
     st.sidebar.write('Código en: ' + githublink)
 
     with st.expander('Sobre el proyecto'):
-        # st.write('')
+        st.write(
+            'La idea detrás de este proyecto fue motivada por mi pasión por el fútbol y la curiosidad por las estadísticas.' +
+            ' Este proyecto utiliza Football Data, que proporciona datos y estadísticas de fútbol.')
         st.write('Si quieres contribuir: ', githublink)
+
+    st.sidebar.header('Proximamente')
+    st.sidebar.write('- Las 5 grandes Ligas')
+    st.sidebar.write('- Analisis de más partidos')
+    st.sidebar.write('- Resultados de partidos(Act-2005')
 
 fin = pd.DataFrame()
 df['Fecha'] = df[['day', 'month', 'year']].astype(str).apply('-'.join, axis=1)
@@ -56,9 +61,33 @@ for ind,x in enumerate(df.Prediccion):
 fin['Predicción'] = lista
 fin['Cuota'] = cuo
 
-fin['Recomendación'] = ['1 DNV', '1', 'X2', '2 Handicap +1.0', '1', '1 DNV', 'X2', '1 DNV', 'X2', '1 DNV', '1X']
-fin['Cuota 2'] = ["{0:.2f}".format(1.73),"{0:.2f}".format(1.75),"{0:.2f}".format(1.67),"{0:.2f}".format(1.73),
-                  "{0:.2f}".format(1.85),"{0:.2f}".format(1.57),"{0:.2f}".format(1.80),"{0:.2f}".format(1.62),
-                  "{0:.2f}".format(1.83),"{0:.2f}".format(1.57),"{0:.2f}".format(1.50)]
-fin['Resultado'] = ['🟥','🟥','✅','🟦','✅','✅','✅','🟦','🟥','🟦','✅']
+fin['Recomendación'] = ['1 DNV', '2 DNV', 'X2', '1 DNV', '1', 'X2', '2 DNV', '1', '2', '1 DNV', 'X2']
+fin['Cuota 2'] = ["{0:.2f}".format(1.61),"{0:.2f}".format(1.61),"{0:.2f}".format(1.70),"{0:.2f}".format(1.57),
+                  "{0:.2f}".format(1.83),"{0:.2f}".format(1.50),"{0:.2f}".format(1.50),"{0:.2f}".format(2.05),
+                  "{0:.2f}".format(2.05),"{0:.2f}".format(1.50),"{0:.2f}".format(1.66)]
+fin['Resultado'] = '...'
+#fin['Resultado'] = ['🟥','🟥','✅','🟦','✅','✅','✅','🟦','🟥','🟦','✅']
 st.table(fin)
+
+footer = """
+    <style>
+    footer {visibility: hidden;}
+    MainMenu {visibility: hidden;}
+
+    # footer:hover,  footer:active {
+    #     color: #fa4d00;
+    #     background-color: transparent;
+    #     text-decoration: underline;
+    #     transition: 400ms ease 0s;
+    # }
+    footer:after {
+        content:'Created by Víctor Comendador ©'; 
+        visibility: visible;
+        display: block;
+        position: relative;
+        padding: 5px;
+        top: 2px;
+    }
+    </style>
+    """
+st.markdown(footer, unsafe_allow_html=True)

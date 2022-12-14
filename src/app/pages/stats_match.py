@@ -30,15 +30,15 @@ with st.sidebar:
     githublink = '[GitHub Repo](https://github.com/victorrmtz/Futbol_Predictor)'
 
     st.image(
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/1384px-LaLiga.svg.png",
+        "https://4.bp.blogspot.com/-1LVHjepJLjk/WfVdYb2cZYI/AAAAAAAAAD8/YZSEZaYRhlUdS4gPbu5eUgypSFjwRcGnwCLcBGAs/s1600/la-liga.gif",
         use_column_width=True)
-
-    st.sidebar.header('Stats Competiciones:')
 
     st.sidebar.write('Código en: ' + githublink)
 
     with st.expander('Sobre el proyecto'):
-        # st.write('')
+        st.write(
+            'La idea detrás de este proyecto fue motivada por mi pasión por el fútbol y la curiosidad por las estadísticas.' +
+            ' Este proyecto utiliza Football Data, que proporciona datos y estadísticas de fútbol.')
         st.write('Si quieres contribuir: ', githublink)
 
     with st.form('Form1'):
@@ -55,6 +55,11 @@ with st.sidebar:
 
         submitted = st.form_submit_button('Run')
 
+    st.sidebar.header('Proximamente')
+    st.sidebar.write('- Las 5 grandes Ligas')
+    st.sidebar.write('- Analisis de más partidos')
+    st.sidebar.write('- Resultados de partidos(Act-2005')
+
 if not submitted:
 
     st.markdown(
@@ -66,11 +71,9 @@ if not submitted:
             }
         </style>
         ### Bienvenido a Eventos de Partido!\n
-        ##### Fútbol Predictor es una aplicación de predicciones de fútbol, calculada a partir de Machine Learning. \
-        Los resultados se obtienen a través del procesamiento de los datos de los últimos 17 años. \
-        También contamos con un análisis de estadisticas de jugadores y equipos españoles. Os proporcionamos un \
-        contenido valioso y único del fútbol español. \n \
-        Ligas: La Liga Santander y La Liga SmartBank \n \
+        ##### Eventos de Partido es una parte de la aplicación en la que analizamos los eventos que ocurren en un partido. \
+        Contamos con un análisis estadístico de cada uno de los equipos. Contenido valioso y único del fútbol español. \n \
+        Ligas: Madrid Segunda de Aficionados. \n \
         ##### Para empezar, utiliza la columna de la izquierda.
         """,
         unsafe_allow_html=True
@@ -180,3 +183,26 @@ else:
             )
             ax_title = ax.set_title('Faltas del equipo', fontsize=25, color='#FFFFFF')
             st.pyplot(fig, facecolor='#0E1117', edgecolor='#0E1117')
+
+footer = """
+    <style>
+    footer {visibility: hidden;}
+    MainMenu {visibility: hidden;}
+
+    # footer:hover,  footer:active {
+    #     color: #fa4d00;
+    #     background-color: transparent;
+    #     text-decoration: underline;
+    #     transition: 400ms ease 0s;
+    # }
+    footer:after {
+        content:'Created by Víctor Comendador ©'; 
+        visibility: visible;
+        display: block;
+        position: relative;
+        padding: 5px;
+        top: 2px;
+    }
+    </style>
+    """
+st.markdown(footer, unsafe_allow_html=True)
