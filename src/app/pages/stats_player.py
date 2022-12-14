@@ -85,7 +85,8 @@ else:
     col1, col2, col3, col4, col5 = st.columns([1, 1, 0.33, 0.33, 0.33])
 
     with col1:
-        st.image('https://cdn.sofifa.net/players/notfound_0_60.png', width=290)
+
+        st.image(players[players.Id == player].foto.iloc[0], width=290)
 
 
     with col2:
