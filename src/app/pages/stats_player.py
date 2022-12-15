@@ -62,7 +62,7 @@ if not submitted:
             text-decoration-color: #fa4d00;
             }
         </style>
-        ### Bienvenido a Fútbol Predictor!\n
+        ### Bienvenido a Estadísticas de Jugadores!\n
         ##### Los resultados se obtienen a través del procesamiento de los datos de los últimos 17 años. \
         También contamos con un análisis de estadisticas de jugadores y equipos españoles. Os proporcionamos un \
         contenido valioso y único del fútbol español. \n \
